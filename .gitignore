@@ -1,0 +1,35 @@
+# Secret API keys
+.streamlit/secrets.toml
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+
+# Local Poppler installation
+poppler-25.12.0/
+poppler-*/
+
+# Local Python dependency folders
+Lib/
+Doc/
+
+# Test/sample images
+sample.png
+sample2.png
+sample3.png
+sample4.png
+sample5.png
+sample6.png
+sample7.png
+sample8.png
+sample9.png
+PROJECT REPORT 20 mar 2026.pdf
