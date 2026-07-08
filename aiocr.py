@@ -3,6 +3,7 @@ import pytesseract
 import cv2
 import numpy as np
 import json
+import platform
 
 from PIL import Image
 from pdf2image import convert_from_bytes
@@ -25,9 +26,10 @@ st.set_page_config(
 # TESSERACT CONFIGURATION
 # ============================================================
 
-pytesseract.pytesseract.tesseract_cmd = (
-    r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-)
+if platform.system() == "Windows":
+    pytesseract.pytesseract.tesseract_cmd = (
+        r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    )
 
 
 # ============================================================
